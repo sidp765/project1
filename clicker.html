@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#clicker-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#clicker-button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+</style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Clicker Game</h1>
+        <button id="clicker-button">Click Me!</button>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+    <script>
+        let score = ;
+
+document.getElementById('clicker-button').addEventListener('click', function() {
+    score++;
+    document.getElementById('score').innerText = score;
+});
+
+    </script>
+</body>
+</html>
